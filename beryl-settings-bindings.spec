@@ -47,7 +47,11 @@ echo '#beryl version header' > VERSION
 echo VERSION=0.1.99.2 >> VERSION
 
 %build
-autoreconf -v --install
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure \
 	PYTHON=%{__python} \
 	--disable-static
@@ -59,6 +63,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm -f $RPM_BUILD_ROOT%{py_sitedir}/berylsettings.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
