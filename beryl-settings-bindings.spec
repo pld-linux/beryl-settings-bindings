@@ -1,17 +1,17 @@
 Summary:	Bindings to beryl settings library
 Summary(pl):	Dowi±zania do biblioteki beryl settings
 Name:		beryl-settings-bindings
-Version:	0.1.99.2
+Version:	0.1.9999.1
 Release:	1
 Epoch:		1
 License:	GPL v2+
 Group:		Libraries/Python
-Source0:	http://releases.beryl-project.org/0.1.99.2/%{name}-%{version}.tar.bz2
-# Source0-md5:	84a1ad03e0ba5bfed8a80e7e15c00f7d
+Source0:	http://releases.beryl-project.org/%{version}/%{name}-%{version}.tar.bz2
+# Source0-md5:	b5d4b936c8ee43ed61f1125509ebe184
 URL:		http://beryl-project.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake >= 1:1.9
-BuildRequires:	beryl-core-devel >= 1:0.1.99.2
+BuildRequires:	beryl-core-devel >= 1:%{version}
 BuildRequires:	glib2-devel >= 1:2.6.0
 BuildRequires:	intltool >= 0.35.0
 BuildRequires:	pkgconfig
@@ -19,7 +19,7 @@ BuildRequires:	python-Pyrex
 BuildRequires:	python-devel >= 1:2.4
 BuildRequires:	xorg-lib-libX11-devel
 %pyrequires_eq	python-libs
-Requires:	beryl-core >= 1:0.1.99.2
+Requires:	beryl-core >= 1:%{version}
 Requires:	glib2 >= 1:2.6.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,7 +44,7 @@ Pliki programistyczne dowi±zañ do biblioteki beryl settings.
 %prep
 %setup -q
 echo '#beryl version header' > VERSION
-echo VERSION=0.1.99.2 >> VERSION
+echo VERSION=%{version} >> VERSION
 
 %build
 %{__libtoolize}
