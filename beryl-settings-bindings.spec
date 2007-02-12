@@ -1,5 +1,5 @@
 Summary:	Bindings to beryl settings library
-Summary(pl.UTF-8):   Dowiązania do biblioteki beryl settings
+Summary(pl.UTF-8):	Dowiązania do biblioteki beryl settings
 Name:		beryl-settings-bindings
 Version:	0.1.9999.1
 Release:	1
@@ -31,7 +31,7 @@ Dowiązania do biblioteki beryl settings.
 
 %package devel
 Summary:	Development files for beryl settings bindings
-Summary(pl.UTF-8):   Pliki programistyczne dowiązań do biblioteki beryl settings
+Summary(pl.UTF-8):	Pliki programistyczne dowiązań do biblioteki beryl settings
 Group:		Development/Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 
