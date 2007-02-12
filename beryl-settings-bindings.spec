@@ -1,5 +1,5 @@
 Summary:	Bindings to beryl settings library
-Summary(pl):	Dowi±zania do biblioteki beryl settings
+Summary(pl.UTF-8):   DowiÄ…zania do biblioteki beryl settings
 Name:		beryl-settings-bindings
 Version:	0.1.9999.1
 Release:	1
@@ -26,20 +26,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Bindings to beryl settings library.
 
-%description -l pl
-Dowi±zania do biblioteki beryl settings.
+%description -l pl.UTF-8
+DowiÄ…zania do biblioteki beryl settings.
 
 %package devel
 Summary:	Development files for beryl settings bindings
-Summary(pl):	Pliki programistyczne dowi±zañ do biblioteki beryl settings
+Summary(pl.UTF-8):   Pliki programistyczne dowiÄ…zaÅ„ do biblioteki beryl settings
 Group:		Development/Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 
 %description devel
 Development files for beryl settings bindings.
 
-%description devel -l pl
-Pliki programistyczne dowi±zañ do biblioteki beryl settings.
+%description devel -l pl.UTF-8
+Pliki programistyczne dowiÄ…zaÅ„ do biblioteki beryl settings.
 
 %prep
 %setup -q
