@@ -1,13 +1,13 @@
 Summary:	Bindings to beryl settings library
 Summary(pl.UTF-8):	Dowiązania do biblioteki beryl settings
 Name:		beryl-settings-bindings
-Version:	0.1.9999.1
+Version:	0.1.9999.2
 Release:	1
 Epoch:		1
 License:	GPL v2+
 Group:		Libraries/Python
 Source0:	http://releases.beryl-project.org/%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	b5d4b936c8ee43ed61f1125509ebe184
+# Source0-md5:	4548178c662e48e68564ce12dd5bb3b5
 URL:		http://beryl-project.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake >= 1:1.9
