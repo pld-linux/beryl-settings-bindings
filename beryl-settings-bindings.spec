@@ -2,7 +2,7 @@ Summary:	Bindings to beryl settings library
 Summary(pl.UTF-8):	Dowiązania do biblioteki beryl settings
 Name:		beryl-settings-bindings
 Version:	0.2.1
-Release:	2
+Release:	3
 Epoch:		1
 License:	GPL v2+
 Group:		Libraries/Python
